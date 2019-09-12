@@ -77,3 +77,106 @@ const cityFacts = (city) => {
 
 // ******************************************************************************* // 
 
+// Check String for Spaces
+// Create a function that returns true if a string contains any spaces.
+
+const hasSpaces = (str) => {
+	if (str.includes(' ')) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+// alt answers
+// const hasSpaces = str => str.includes(" ");
+
+// ******************************************************************************* // 
+
+// Volume of a Box
+// Create a function that gets an object arguments with height, width and length of a box and returns the volume of the box.
+// Remember that the values are in an object.
+
+const volumeOfBox = (sizes) => {
+	return sizes.width * sizes.length * sizes.height;
+}
+
+// alt answers
+// const volumeOfBox = (sizes) => sizes.width * sizes.length * sizes.height;
+
+// ******************************************************************************* // 
+
+// Is the Word Singular or Plural?
+// Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s".
+
+const isPlural = (word) => {
+	for (let i = 0; i < word.length; i++ ) {
+		if (word[word.length -1] === 's') {
+			return true;
+		} else {
+			return false;
+		}
+	}
+}
+
+// alt answers
+// function isPlural(word) {
+//	return word.endsWith("s");
+// }
+
+// function isPlural(word) {
+//	return word[word.length - 1] == 's';
+// }
+
+// ******************************************************************************* // 
+
+// String or Integer?
+// Create a function that checks if the argument is an integer or a string. Return int if it's an integer and str if it's a string.
+
+const intOrString = (param)=> {
+	return (isNaN(param) === true) ? 'str' : 'int';	
+}
+
+// alt answers
+// const intOrString = (param) => typeof param === "string" ? "str" : "int"
+
+// ******************************************************************************* // 
+
+// Check if an Array Contains a Given Number
+// Write a function to check if an array contains a particular number.
+
+function check(arr, el) {
+	return arr.includes(el) === true ? true : false;
+}
+
+// alt answers
+// function check(arr, el) {
+//	return arr.includes(el)
+// }
+
+// const check = (arr, el) => arr.includes(el)
+
+// ******************************************************************************* // 
+
+// Return the Last Element in an Array
+// Create a function that accepts an array and returns the last item in the array.
+
+const getLastItem = (arr) => {
+	return arr.pop();
+}
+
+// alt answers
+// function getLastItem(arr) {
+//  return arr[arr.length - 1]
+// }
+
+// ******************************************************************************* // 
+// Find the Index (Part 2)
+// Create a function that finds the index of a given item if the array is sorted.
+
+function search(arr, item) {	
+	return arr.indexOf(item);
+}
+
+// alt answers
+// const search = (arr, num) => arr.indexOf(num);
